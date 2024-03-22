@@ -1,0 +1,6 @@
+The vunlarbility of insecure.js's design is that 
+using the request's input string directly without any process. 
+Hacker might inject script inside the request which is very dangerous. 
+For example. if we input a script with hyper link as name. 
+The website will render the name directly and leading to harm.
+Secure.js limited that threat by sanitizing the request's documents.

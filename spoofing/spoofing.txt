@@ -1,1 +1,12 @@
-Briefly explain the vulnerability and why the secure version prevents the vulnerability.
+
+The vulnerability of the insecure.js is two major mistake
+
+1. The cookie was exposed to any request
+So like the example in `mal.js`. People can setup bait webiste which will get user's login session_id from cookie easily.
+And with dat session_id, he can pretend to the user when acessing the website. The user's account will be breached. T
+o prevent that, we set HttpOnly to True in secure.js
+
+2.The cookie was exposed to all site
+Hacker can setup a hidden request in a fake website, when the user click the site, it will automaticly send request to the server. 
+Since the user is logged in with his account. The cookie will be looked up by the server and think the malicious request was send by user.
+To prevent that, we set SameSite to Ture in secure.js
