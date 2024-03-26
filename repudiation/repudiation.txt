@@ -1,2 +1,5 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+The vulnerability of insecure version is when other threat hanlding mechanisms fails.
+We are not tracking down and keep log of how the attacks was happened for later analysis and updates.
