@@ -1,0 +1,4 @@
+The valunerbility in the none secure server is that its not checking the credential of user that sends
+privilige request. Any user can downgrade the role of admin. The secured version prevent this by add 
+a precondition of admin logged in to any privilige request.
+Addtionally we can add F2A token to furthur enhance the security to have duo safe to our session.

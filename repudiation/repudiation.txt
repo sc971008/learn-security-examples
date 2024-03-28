@@ -3,3 +3,6 @@
 
 The vulnerability of insecure version is when other threat hanlding mechanisms fails.
 We are not tracking down and keep log of how the attacks was happened for later analysis and updates.
+The secured version handles that by adding log statment and generating log files that keep all track of
+excuution request and responses.
+Also we can add error hanlding middleware for furthur and early termination of request.

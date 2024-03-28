@@ -1,3 +1,13 @@
 Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 Which CIA property does tampering violate?
 What additional security mechanisms can you incorporate?
+
+The valunerbility is the server directly uses the input provided by the request 
+and did not check the type might cause SQL injections. The secured version 
+added a layer of if statment to check wether input is string or something else
+
+Which violate Confidentiality of CIA property that sensitive information is accessible only to
+authorized individuals or entities.
+
+Addtional, we can santized the input by useing some lambda function to only take 
+char and spaces from in the string.

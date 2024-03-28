@@ -1,2 +1,8 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+The vunerability in the insecured version is that its request handler did not have mechanish
+to stop large number of request. The secured version handled that valunerbility by add a try
+catch block to handle error if the request is not reponsive.'
+Addtionally we can add layer of protection to DDos attcak by set a counter to make the server
+only take certain number of request from a user session in a time peorids.
